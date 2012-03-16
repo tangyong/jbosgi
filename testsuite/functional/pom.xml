@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!-- ====================================================================== -->
-<!-- -->
-<!-- JBoss, the OpenSource J2EE webOS -->
-<!-- -->
-<!-- Distributable under LGPL license. -->
-<!-- See terms of license at http://www.gnu.org. -->
-<!-- -->
+<!--                                                                        -->
+<!-- JBoss, the OpenSource J2EE webOS                                       -->
+<!--                                                                        -->
+<!-- Distributable under LGPL license.                                      -->
+<!-- See terms of license at http://www.gnu.org.                            -->
+<!--                                                                        -->
 <!-- ====================================================================== -->
 
 <!--
@@ -22,7 +22,6 @@
 
     <name>JBossOSGi Testsuite Functional</name>
 
-    <groupId>org.jboss.osgi.testsuite</groupId>
     <artifactId>jboss-osgi-testsuite-functional</artifactId>
     <packaging>jar</packaging>
 
@@ -102,12 +101,13 @@
                 </dependency>
             </dependencies>
         </profile>
+        <!-- 
         <profile>
-            <id>jboss710-testing</id>
+            <id>jboss711-testing</id>
             <activation>
                 <property>
                     <name>target.container</name>
-                    <value>jboss710</value>
+                    <value>jboss711</value>
                 </property>
             </activation>
             <build>
@@ -129,7 +129,7 @@
                                 <artifactItem>
                                     <groupId>org.jboss.as</groupId>
                                     <artifactId>jboss-as-dist</artifactId>
-                                    <version>${version.jbossas.710}</version>
+                                    <version>${version.jbossas.711}</version>
                                     <type>zip</type>
                                     <overWrite>true</overWrite>
                                     <outputDirectory>${basedir}/target</outputDirectory>
@@ -140,5 +140,6 @@
                 </plugins>
             </build>
         </profile>
+        -->
     </profiles>
 </project>
